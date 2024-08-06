@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Anybody", sans-serif;
+    background-color: #dfdfd8;
+    overflow-x: hidden;
+}
+img{
+    /* width: 100%; */
+    max-width: 100%;
+    height: auto;
+}
+header{
+    background-color: #fafaf6;
+    height: 4.5rem;
+    position: sticky;
+    top: 0;
+}
+.hamburger{
+    display: none;
+ 
+}
+.container{
+    margin-inline: auto;
+    width: min(90%, 1120px);    
+    padding: 0 15px;
+}
+.desktop-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    
+}
+.menus-links{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.menus-links li {
+    list-style: none;
+}
+.menus-links li a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    line-height: 1.625;
+    font-weight: 500;
+    color: #2b2b2b;
+}
+.menus-links li a:hover{
+    color: #5f6ad4;
+    }
+.desktop-menu h1{
+    font-weight: 700;
+    font-size: 1.5625rem;
+    line-height: 1.5625rem;
+}
+.mobile-menu{
+    display: none;
+}
+.mobile-menu-action{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    gap: 10px;
+   
+    
+}
+.btn-primary, .btn-sencondry{   
+    text-decoration: none;
+    background-color: #5f6ad4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+} 
+.btn-sencondry{
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.hero{
+    display: flex;
+    height: calc(100vh - 4.5rem);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-min-an-1234035.jpg') center / cover no-repeat;
+    justify-content: center;
+}
+.hero .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.hero .container h1{
+    font-size: 3rem;
+    font-weight: 400;
+    /* line-height: 5rem; */
+    color: white;
+    text-align: center;
+}
+.hero .container .btn{
+    padding: 0.9375rem 7.75rem;
+    font-size: 1.25rem;
+    background-color: #5f6ad4;
+    border-radius: 10px;
+    color: white;
+    border: none;
+}
+.hero .container .btn:hover {
+    background-color: #fafaf6;
+    color: black;
+}
+.yoga{
+    height: 90vh;
+    background: linear-gradient(rgba(139, 134, 134, 0.5),rgba(81, 79, 79, 0.5)), url('/img/yoga.png') center / cover no-repeat;
+    margin-top: 6rem;
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-end;
+   
+}
+.yoga .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 728px;
+    gap: 30px;
+    color: #fff;
+    margin-inline: auto;
+    margin-bottom: 7rem;
+}
+.yoga .content h1{
+    font-size: 3.125rem;
+    line-height: 3.125rem;
+    font-weight: 700;
+    text-align: center;
+}
+.yoga .content p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-block: 6rem;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.box h1{
+    font-size: 1.5625rem;
+    font-weight: 400;
+}
+.box p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: rgb(100, 100, 100);
+    }
+
+.box img{
+    border-radius: 15px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.box .btn{
+    padding: 1rem 2.1875rem;
+    font-size: 1.25rem;
+    background-color: #5f6ad4;
+    border-radius: 10px;
+    color: white;
+    border: none;
+}
+.box .btn:hover{
+    background-color: #fafaf6;
+    color: black;
+}
+
+.perfection-condition{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 438px;
+    background: linear-gradient(rgba(226, 219, 219, 0.2), rgba(183, 163, 163, 0.2)), url('https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-andrea-piacquadio-3779750.jpeg') center / cover no-repeat;
+    padding-block: 2rem;
+    background-attachment: fixed;
+    margin-block: 5rem;
+}
+
+.perfection-condition h2{
+    font-size: 3.125rem;
+    font-weight: 400;
+    color: #2a2a2a;
+    margin-bottom: 2rem;
+}
+.perfection-condition p{
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #2a2a2a;
+}
+
+.life-yoga{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-block: 5rem;
+    height: 54.375rem; 
+}
+.life-yoga h1{
+    font-size: 3.125rem;
+    font-weight: 400;
+    color: #2a2a2a;
+    margin-bottom: 2rem;
+    text-align: center;
+    }
+
+.image-yoga{
+    background: linear-gradient(rgba(226, 219, 219, 0.2), rgba(183, 163, 163, 0.2)), url('img/ply-yoga.png') center / cover no-repeat;
+    height: 38.75rem;
+    width: 90%;
+    margin-inline: auto;
+    border-radius: 20px;
+    
+}
+
+.blogs-yoga{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.header-1 > h1{
+    font-size: 3.125rem;
+    font-weight: 400;
+    color: #2a2a2a;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.blog-yoga{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+.blog-yoga h3{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #2b2b2b;
+    line-height: 32.24px;
+    text-align: center;
+    gap: 20px;
+}
+.blog-yoga p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #646464;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 1rem;
+    }
+.blog-yoga img{
+    height: 360px;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.blog-yoga .btn {
+    padding: 0.75rem 3.1875rem;
+    font-size: 1.25rem;
+    background-color: #5f6ad4;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 2rem;
+    align-items: center;
+    width: 100%;
+}
+
+.blog-yoga .btn:hover {
+    background-color: #fafaf6;
+    color: black;
+}
+
+.yoga-classes{
+    background: linear-gradient(rgba(226, 219, 219, 0.2), rgba(183, 163, 163, 0.2)), url('img/life.png') center / cover no-repeat;
+    height: 22.199375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 5rem;
+    padding-block: 2rem;
+}
+
+.yoga-box{
+    background-color: #dfdfd8;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0,
+    0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #5f6ad4;
+    overflow-x: hidden;
+    padding: 2rem;
+
+}
+.yoga-box h1{
+    font-size: 1.5625rem;
+    font-weight: 400;
+    color: #2b2b2b;
+    line-height: 2rem;
+}
+.yoga-box .btn {
+    padding: 0.75rem 3.1875rem;
+    font-size: 1.25rem;
+    background-color: #5f6ad4;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+footer {
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 1.25rem;
+    padding: 2rem;
+}
+
+/* tablet and mobile phones */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        background-color: #5f6ad4;
+        top: 7%;
+        right: 5%;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        font-size: 2rem;
+        color: #fff;
+        z-index: 1000;
+        /* Ensure it stays on top */
+    }
+
+    header {
+        height: auto;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+        position: fixed;
+        background-color: #2b2b2b;
+        justify-content: center;
+        inset: 0 0 0 0;
+        transform: translateX(0%);
+        transition: transform 350ms ease-in-out;
+        z-index: 999;
+        /* Ensure it stays on top */
+    }
+
+    .mobile-menu[data-visible="false"] {
+        transform: translateX(100%);
+    }
+
+    .hamburger i[data-visible="true"] {
+        display: block;
+    }
+
+    .hamburger i[data-visible="false"] {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+        gap: 2rem;
+    }
+
+    .navigation h1 {
+        font-size: 2.3125rem;
+        font-weight: 700;
+        color: #fff;
+        border-bottom: 1px solid white;
+        padding: 20px;
+    }
+
+    .menus-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .menus-links li a {
+        color: #fff !important;
+        font-size: 1.5rem;
+    }
+
+    .hero {
+        height: 100vh;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        text-align: center;
+        padding: 0 15px;
+        /* Prevent text from touching the edges */
+    }
+
+    .yoga {
+        height: auto;
+        margin-top: 2rem;
+        padding: 0 15px;
+        /* Prevent content from touching the edges */
+    }
+
+    .yoga .content h1 {
+        font-size: 2rem;
+    }
+
+    .yoga .content p {
+        font-size: 1rem;
+    }
+
+    .boxes {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 15px;
+        /* Prevent content from touching the edges */
+    }
+
+    .perfection-condition {
+        padding: 0 15px;
+        /* Prevent content from touching the edges */
+    }
+
+    .perfection-condition h2 {
+        font-size: 1.9375rem;
+        text-align: center;
+    }
+
+    .perfection-condition p {
+        font-size: 1.125rem;
+        text-align: center;
+    }
+
+    .life-yoga {
+        height: 300PX;
+        width: 100%;
+        margin-block: 2REM;
+        padding: 0 15px;
+        /* Prevent content from touching the edges */
+    }
+
+    .life-yoga h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .life-yoga.image-yoga {
+        height: 30%;
+        width: 100%;
+        margin-inline: auto;
+        border-radius: 20px;
+    }
+
+    .blogs-yoga {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 15px;
+        /* Prevent content from touching the edges */
+    }
+
+    .blog-yoga img {
+        height: auto;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .blog-yoga h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .blog-yoga p {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .yoga-classes {
+        padding: 0 15px;
+        /* Prevent content from touching the edges */
+    }
+
+    .yoga-box {
+        flex-direction: column;
+        align-items: center;
+        padding: 10 15px;
+        /* Prevent content from touching the edges */
+    }
+
+    .yoga-box h1 {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+   
+
+
+
